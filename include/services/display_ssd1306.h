@@ -137,5 +137,5 @@ void Display_SSD1306::setFuncMode(bool funcMode) {
     this->isFuncMode = funcMode;
 }
 
-inline Display_SSD1306 disp;    ///< Display OLED.
+Display_SSD1306 disp;    ///< Display OLED.
 #endif 

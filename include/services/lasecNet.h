@@ -115,4 +115,4 @@ private:
     OtaErrorCb      _onError      = nullptr;
 };
 
-inline LasecNet net; ///< Instância global de gerenciamento de rede.
+LasecNet net; ///< Instância global de gerenciamento de rede.
