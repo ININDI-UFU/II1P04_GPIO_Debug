@@ -17,7 +17,6 @@
             "toolchainBinDir": "C:/Users/josuemorais/.platformio/packages/toolchain-xtensa-esp-elf/bin",
             "internalConsoleOptions": "openOnSessionStart",
             "svdPath": "C:/Users/josuemorais/.platformio/platforms/espressif32/misc/svd/esp32s3.svd",
-            "loadMode": "manual",
             "preLaunchTask": {
                 "type": "PlatformIO",
                 "task": "Pre-Debug"
@@ -31,8 +30,7 @@
             "projectEnvName": "esp32dev",
             "toolchainBinDir": "C:/Users/josuemorais/.platformio/packages/toolchain-xtensa-esp-elf/bin",
             "internalConsoleOptions": "openOnSessionStart",
-            "svdPath": "C:/Users/josuemorais/.platformio/platforms/espressif32/misc/svd/esp32s3.svd",
-            "loadMode": "manual"
+            "svdPath": "C:/Users/josuemorais/.platformio/platforms/espressif32/misc/svd/esp32s3.svd"
         },
         {
             "type": "platformio-debug",
