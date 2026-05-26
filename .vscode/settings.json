@@ -1,0 +1,8 @@
+{
+    "terminal.integrated.profiles.windows": {
+        "PlatformIO": {
+            "path": "cmd.exe",
+            "args": ["/K", "C:\\Users\\josuemorais\\.platformio\\penv\\Scripts\\activate.bat"]
+        }
+    }
+}

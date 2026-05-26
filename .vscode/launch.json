@@ -9,17 +9,6 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "Wokwi GDB",
-            "type": "cppdbg",
-            "request": "launch",
-            "program": "${workspaceFolder}/.pio/build/${input:buildFolder}/firmware.elf",
-            "cwd": "${workspaceFolder}",
-            "MIMode": "gdb",
-            "miDebuggerPath": "${env:USERPROFILE}\\.platformio\\packages\\toolchain-xtensa-esp32\\bin\\xtensa-esp32-elf-gdb.exe",
-            "miDebuggerServerAddress": "${input:gdbServerAddress}",
-            "stopAtEntry": false
-        },
-        {
             "type": "platformio-debug",
             "request": "launch",
             "name": "PIO Debug",
@@ -27,6 +16,8 @@
             "projectEnvName": "esp32dev",
             "toolchainBinDir": "C:/Users/josuemorais/.platformio/packages/toolchain-xtensa-esp-elf/bin",
             "internalConsoleOptions": "openOnSessionStart",
+            "svdPath": "C:/Users/josuemorais/.platformio/platforms/espressif32/misc/svd/esp32s3.svd",
+            "loadMode": "manual",
             "preLaunchTask": {
                 "type": "PlatformIO",
                 "task": "Pre-Debug"
@@ -39,7 +30,9 @@
             "executable": "C:/SourceCode/0II1/II1P04_GPIO_Debug/.pio/build/esp32dev/firmware.elf",
             "projectEnvName": "esp32dev",
             "toolchainBinDir": "C:/Users/josuemorais/.platformio/packages/toolchain-xtensa-esp-elf/bin",
-            "internalConsoleOptions": "openOnSessionStart"
+            "internalConsoleOptions": "openOnSessionStart",
+            "svdPath": "C:/Users/josuemorais/.platformio/platforms/espressif32/misc/svd/esp32s3.svd",
+            "loadMode": "manual"
         },
         {
             "type": "platformio-debug",
@@ -49,21 +42,9 @@
             "projectEnvName": "esp32dev",
             "toolchainBinDir": "C:/Users/josuemorais/.platformio/packages/toolchain-xtensa-esp-elf/bin",
             "internalConsoleOptions": "openOnSessionStart",
+            "svdPath": "C:/Users/josuemorais/.platformio/platforms/espressif32/misc/svd/esp32s3.svd",
             "loadMode": "manual"
         }
     ],
-    "inputs": [
-        {
-            "id": "gdbServerAddress",
-            "type": "promptString",
-            "description": "Digite o endereço do servidor GDB",
-            "default": "localhost:3333"
-        },
-        {
-            "id": "buildFolder",
-            "type": "promptString",
-            "description": "Digite o nome da pasta de build (ex: esp32)",
-            "default": "esp32"
-        }
-    ]
+    "inputs": []
 }
